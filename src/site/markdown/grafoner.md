@@ -26,4 +26,4 @@
 
 ---
 
-... as well as "default" actions like branch-merge, updating the [Tasklist](README.md), keeping my co-workers up to date, etc.
+... as well as "default" actions like branch-merge, updating the Tasklist, keeping my co-workers up to date, etc.
