@@ -13,8 +13,8 @@
 - [x] 3 Fehler finden
 - [x] Eigenes branch fürs Korrigieren
 - [x] Branch mergen
-- [ ] Neue Implementierung der vorhandenen Version
-- [ ] Neue Queue-Version erstellen
+- [x] Neue Implementierung der vorhandenen Version
+- [x] Neue Queue-Version erstellen
 - [ ] Tests erstellen
 - [ ] Javadoc
 - [ ] Javadoc Test erstellen
