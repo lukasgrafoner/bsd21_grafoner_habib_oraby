@@ -16,9 +16,9 @@
 - [x] Neue Implementierung der vorhandenen Version
 - [x] Neue Queue-Version erstellen
 - [x] Tests erstellen
-- [ ] Javadoc
-- [ ] Javadoc Test erstellen
-- [ ] Maven site
+- [x] Javadoc
+- [x] Javadoc Test erstellen
+- [x] Maven site
 - [ ] History kontrollieren
 - [ ] Ripository kontrollieren
 - [ ] Abgeben
