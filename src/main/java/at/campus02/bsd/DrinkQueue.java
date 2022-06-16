@@ -45,12 +45,22 @@ public class DrinkQueue implements IDQueue{
     }
 
     @Override
-    public String peek() {
-        return null;
+    public Object peek() {
+        Object element;
+        if (elements.size() > 0)
+            element = elements.get(0);
+        else
+            element = null;
+
+        return element;
     }
 
     @Override
-    public String element() {
-        return null;
+    public Object element() {
+        Object element = peek();
+        if (element == null)
+            throw new NoSuchElementException("there's no element any more");
+
+        return element;
     }
 }
