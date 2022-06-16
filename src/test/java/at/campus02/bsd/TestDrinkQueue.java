@@ -45,4 +45,14 @@ public class TestDrinkQueue {
         Assertions.assertEquals(false, drinkq.offer(simpleDrink));
     }
 
+    /**
+     * Adding simpleDrink to the queue
+     * Removing it with poll
+     */
+    @Test
+    void testPoll(){
+        drinkq.offer(simpleDrink);
+        Assertions.assertEquals(simpleDrink, drinkq.poll());
+    }
+
 }
