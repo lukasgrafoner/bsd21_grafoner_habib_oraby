@@ -11,7 +11,7 @@ public class TestDrinkQueue {
 
     /**
      * Creates a setup, which is needed for the tests.
-     * Create a valid liquid, simple-drink and drinks-queue object
+     * Create test-data
      */
     @BeforeEach
     public void setup() {
@@ -22,7 +22,7 @@ public class TestDrinkQueue {
     }
 
     /**
-     *  All liquid get-methods are tested without any errors.
+     *  Check attributes of the liquid
      */
     @Test
     void testLiquid() {
@@ -30,4 +30,19 @@ public class TestDrinkQueue {
         Assertions.assertEquals("Cola", liquid.getName());
         Assertions.assertEquals(2, liquid.getVolume());
     }
+
+    /**
+     * Adding simpleDrink 5 times - returns true
+     * Adding a 6th simpleDrink - returns false (max = 5)
+     */
+    @Test
+    void testOffer(){
+        Assertions.assertEquals(true, drinkq.offer(simpleDrink));
+        Assertions.assertEquals(true, drinkq.offer(simpleDrink));
+        Assertions.assertEquals(true, drinkq.offer(simpleDrink));
+        Assertions.assertEquals(true, drinkq.offer(simpleDrink));
+        Assertions.assertEquals(true, drinkq.offer(simpleDrink));
+        Assertions.assertEquals(false, drinkq.offer(simpleDrink));
+    }
+
 }
