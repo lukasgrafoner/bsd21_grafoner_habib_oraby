@@ -8,6 +8,7 @@ package at.campus02.bsd;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class DrinkQueue implements IQueue{
 
@@ -15,18 +16,27 @@ public class DrinkQueue implements IQueue{
     private int max = 5;
 
     @Override
-    public boolean offer(String obj) {
+    public boolean offer(Object obj) {
         return false;
     }
 
     @Override
-    public String poll() {
-        return null;
+    public Object poll() {
+        Object element = peek();
+
+        if (elements.size() != 0) {
+            elements.remove(element);
+        }
+        return element;
     }
 
     @Override
-    public String remove() {
-        return null;
+    public Object remove() {
+        Object element = poll();
+        if (element == null)
+            throw new NoSuchElementException("there's no element any more");
+
+        return element;
     }
 
     @Override
