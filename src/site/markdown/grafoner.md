@@ -7,7 +7,7 @@
 *We had a todo-list, which helped us to divide the tasks*\
 
 **The following tasks are those, I was involved in:**
-
+ 
 ---
 - [x] Reading the instructions
 - [x] Create repository
