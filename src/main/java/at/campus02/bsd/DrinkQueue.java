@@ -9,14 +9,19 @@ package at.campus02.bsd;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DrinkQueue implements IQueue{
+public class DrinkQueue implements IDQueue{
 
     private List<Object> elements = new ArrayList<Object>();
     private int max = 5;
 
     @Override
-    public boolean offer(String obj) {
-        return false;
+    public boolean offer(Object drink) {
+        if (elements.size() != max)
+            elements.add(drink);
+        else
+            return false;
+
+        return true;
     }
 
     @Override
