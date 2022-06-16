@@ -8,7 +8,7 @@
 
 - [x] Reading the instructions
 
-The whole group had to read the instructions, after everyone seperetally read, we discussed the tasks, which were unclear for some or to make sure that everyone knows what to do. As a result, I managed to create a tasklist in the readme.md [README](README.md).
+The whole group had to read the instructions, after everyone seperetally read, we discussed the tasks, which were unclear for some or to make sure that everyone knows what to do. As a result, I managed to create a tasklist in the README.md.
 
 - [x] pom.xml
 
