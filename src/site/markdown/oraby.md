@@ -48,7 +48,7 @@ Every developer had to add JavaDoc comments to his implementations and tests.
 
 - [x] Maven site
 
-After editing the pom.xml and pushing the new version, I created oraby.md folder in the right structure.
+After editing the pom.xml and pushing the new version, I created oraby.md in the branch maven_site folder in the right structure.
 
 - [x] Controlling the history
 
