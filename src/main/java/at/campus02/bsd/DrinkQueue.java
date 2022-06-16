@@ -16,7 +16,7 @@ public class DrinkQueue implements IQueue{
     private int max = 5;
 
     @Override
-    public boolean offer(Object obj) {
+    public boolean offer(String obj) {
         return false;
     }
 
