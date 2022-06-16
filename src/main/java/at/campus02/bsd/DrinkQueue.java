@@ -9,7 +9,9 @@ package at.campus02.bsd;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
-
+/**
+ * Public class for Drink Queue
+ */
 public class DrinkQueue implements IDQueue{
 
     private List<Object> elements = new ArrayList<Object>();

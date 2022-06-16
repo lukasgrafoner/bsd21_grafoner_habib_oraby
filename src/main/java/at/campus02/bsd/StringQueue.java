@@ -17,6 +17,11 @@ public class StringQueue implements IQueue {
     maxSize = maxSize;
   }
 
+  /**
+   * add object to queue
+   * @param obj
+   * @return returns true if adding works
+   */
   @Override
   public boolean offer(String obj) {
     if (elements.size() != maxSize)
@@ -27,6 +32,10 @@ public class StringQueue implements IQueue {
     return true;
   }
 
+  /**
+   * @return first element
+   * delete first element
+   */
   @Override
   public String poll() {
     String element = peek();
@@ -38,6 +47,10 @@ public class StringQueue implements IQueue {
     return element;
   }
 
+  /**
+   * @return first element
+   * @exception throws NoSuchElementException if element doesn't exist
+   */
   @Override
   public String remove() {
     String element = poll();
@@ -46,7 +59,11 @@ public class StringQueue implements IQueue {
 
     return element;
   }
-
+  /**
+   * method to get the first element
+   * if element-list empty, return null
+   * @return first element or null
+   */
   @Override
   public String peek() {
     String element;
@@ -57,7 +74,11 @@ public class StringQueue implements IQueue {
 
     return element;
   }
-
+  /**
+   * method to get the first element
+   * @return first element
+   * @throws NoSuchElementException if there is no element
+   */
   @Override
   public String element() {
     String element = peek();
