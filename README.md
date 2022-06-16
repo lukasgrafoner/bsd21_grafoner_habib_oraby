@@ -15,7 +15,7 @@
 - [x] Branch mergen
 - [x] Neue Implementierung der vorhandenen Version
 - [x] Neue Queue-Version erstellen
-- [ ] Tests erstellen
+- [x] Tests erstellen
 - [ ] Javadoc
 - [ ] Javadoc Test erstellen
 - [ ] Maven site
