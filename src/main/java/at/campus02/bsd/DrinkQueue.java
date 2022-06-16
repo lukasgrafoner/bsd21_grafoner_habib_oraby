@@ -59,6 +59,11 @@ public class DrinkQueue implements IDQueue{
         return element;
     }
 
+    /**
+     * method to get the first element
+     * if element-list empty, return null
+     * @return first element or null
+     */
     @Override
     public Object peek() {
         Object element;
@@ -70,6 +75,11 @@ public class DrinkQueue implements IDQueue{
         return element;
     }
 
+    /**
+     * method to get the first element
+     * @return first element
+     * @throws NoSuchElementException if there is no element
+     */
     @Override
     public Object element() {
         Object element = peek();
