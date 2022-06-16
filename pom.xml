@@ -7,19 +7,30 @@
     <groupId>org.example</groupId>
     <artifactId>bsd21_grafoner_habib_oraby</artifactId>
     <version>1.0-SNAPSHOT</version>
-<developers>
-    <developer>
-        <id>omaroraby</id>
-        <name>Omar Oraby</name>
-        <email>52020494@edu.campus02.at</email>
-        <organization>FH CAMPUS 02</organization>
-        <organizationUrl>https://www.campus02.at/</organizationUrl>
-        <roles>
-            <role>Student</role>
-        </roles>
-        <timezone>Europe/Vienna</timezone>
-    </developer>
-</developers>
+    <developers>
+        <developer>
+            <id>omaroraby</id>
+            <name>Omar Oraby</name>
+            <email>52020494@edu.campus02.at</email>
+            <organization>FH CAMPUS 02</organization>
+            <organizationUrl>https://www.campus02.at/</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+        </developer>
+        <developer>
+            <id>lukasgrafoner</id>
+            <name>Lukas Grafoner</name>
+            <email>s50706@edu.campus02.at</email>
+            <organization>FH CAMPUS 02</organization>
+            <organizationUrl>https://www.campus02.at/</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+        </developer>
+    </developers>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
