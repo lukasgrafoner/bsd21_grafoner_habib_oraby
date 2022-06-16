@@ -62,7 +62,6 @@ public class TestDrinkQueue {
      * Adding simpleDrink to the queue
      * returning it because it's the first element
      */
-
     @Test
     void testPeek() {
         drinkq.offer(simpleDrink);
@@ -73,7 +72,6 @@ public class TestDrinkQueue {
      * Adding simpleDrink to the queue
      * Removing it with remove
      */
-
     @Test
     void testRemove() {
         drinkq.offer(simpleDrink);
@@ -84,7 +82,6 @@ public class TestDrinkQueue {
      * Test if exception will be thrown
      * Getting element from an empty queue
      */
-
     @Test
     void testElement() {
         Assertions.assertThrows(NoSuchElementException.class, () -> { drinkq.element();});
