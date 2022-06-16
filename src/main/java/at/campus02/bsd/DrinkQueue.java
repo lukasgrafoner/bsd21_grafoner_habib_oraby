@@ -15,6 +15,11 @@ public class DrinkQueue implements IDQueue{
     private List<Object> elements = new ArrayList<Object>();
     private int max = 5;
 
+    /**
+     * add object to queue
+     * @param drink
+     * @return returns true if adding works
+     */
     @Override
     public boolean offer(Object drink) {
         if (elements.size() != max)
