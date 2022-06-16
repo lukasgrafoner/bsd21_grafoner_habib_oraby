@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.NoSuchElementException;
 
-import static org.junit.Assert.assertThrows;
+
 
 public class TestStringQueue {
     private StringQueue stringq;
@@ -71,7 +71,7 @@ public class TestStringQueue {
 
     @Test
     public void testRemove2(){
-        assertThrows(NoSuchElementException.class, () -> stringq.remove());
+        Assertions.assertThrows(NoSuchElementException.class, () -> stringq.remove());
     }
 
 
