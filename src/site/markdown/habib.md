@@ -1,5 +1,7 @@
 # Kyrillos Habib
 ## Contributions for the group project
+Link to the [Github](https://github.com/lukasgrafoner/bsd21_grafoner_habib_oraby.git)
+
 
 ## Planning the project
 ### We had a to-do list, which helped us to devide the tasks
