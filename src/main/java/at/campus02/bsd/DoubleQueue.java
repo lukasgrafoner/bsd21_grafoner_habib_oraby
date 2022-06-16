@@ -78,7 +78,7 @@ public class DoubleQueue implements IDoubleQueue{
     @Override
     public double element() {
         double element = peek();
-        if (element == 0)
+        if (element == -1)
             throw new NoSuchElementException("there's no element any more");
 
         return element;
