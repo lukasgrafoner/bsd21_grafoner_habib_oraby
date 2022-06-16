@@ -3,6 +3,9 @@ package at.campus02.bsd;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+
+import java.util.NoSuchElementException;
 
 public class TestDrinkQueue {
     private DrinkQueue drinkq;
@@ -77,5 +80,14 @@ public class TestDrinkQueue {
         Assertions.assertEquals(simpleDrink, drinkq.remove());
     }
 
+    /**
+     * Test if exception will be thrown
+     * Getting element from an empty queue
+     */
+
+    @Test
+    void testElement() {
+        Assertions.assertThrows(NoSuchElementException.class, () -> { drinkq.element();});
+    }
 
 }
