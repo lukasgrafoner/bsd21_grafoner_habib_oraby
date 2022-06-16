@@ -30,6 +30,11 @@ public class DrinkQueue implements IDQueue{
         return true;
     }
 
+    /**
+     * @return first element
+     * delete first element
+     */
+
     @Override
     public Object poll() {
         Object element = peek();
@@ -39,6 +44,11 @@ public class DrinkQueue implements IDQueue{
         }
         return element;
     }
+
+    /**
+     * @return first element
+     * @exception throws NoSuchElementException if element doesn't exist
+     */
 
     @Override
     public Object remove() {
