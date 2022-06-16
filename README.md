@@ -9,7 +9,7 @@
 - [x] Repository erstellen
 - [x] Maven Projekt erstellen
 - [x] Vorlage einbinden
-- [ ] pom.xml erweitern
+- [x] pom.xml erweitern
 - [ ] 3 Fehler finden
 - [ ] Eigenes branch fürs Korrigieren
 - [ ] Branch mergen
