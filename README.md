@@ -10,9 +10,9 @@
 - [x] Maven Projekt erstellen
 - [x] Vorlage einbinden
 - [x] pom.xml erweitern
-- [ ] 3 Fehler finden
-- [ ] Eigenes branch fürs Korrigieren
-- [ ] Branch mergen
+- [x] 3 Fehler finden
+- [x] Eigenes branch fürs Korrigieren
+- [x] Branch mergen
 - [ ] Neue Implementierung der vorhandenen Version
 - [ ] Neue Queue-Version erstellen
 - [ ] Tests erstellen
