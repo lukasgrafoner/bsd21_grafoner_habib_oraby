@@ -19,6 +19,6 @@
 - [x] Javadoc
 - [x] Javadoc Test erstellen
 - [x] Maven site
-- [ ] History kontrollieren
-- [ ] Ripository kontrollieren
-- [ ] Abgeben
+- [x] History kontrollieren
+- [x] Ripository kontrollieren
+- [x] Abgeben
