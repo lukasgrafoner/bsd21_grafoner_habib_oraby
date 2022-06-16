@@ -55,4 +55,27 @@ public class TestDrinkQueue {
         Assertions.assertEquals(simpleDrink, drinkq.poll());
     }
 
+    /**
+     * Adding simpleDrink to the queue
+     * returning it because it's the first element
+     */
+
+    @Test
+    void testPeek() {
+        drinkq.offer(simpleDrink);
+        Assertions.assertEquals(simpleDrink, drinkq.peek());
+    }
+
+    /**
+     * Adding simpleDrink to the queue
+     * Removing it with remove
+     */
+
+    @Test
+    void testRemove() {
+        drinkq.offer(simpleDrink);
+        Assertions.assertEquals(simpleDrink, drinkq.remove());
+    }
+
+
 }
