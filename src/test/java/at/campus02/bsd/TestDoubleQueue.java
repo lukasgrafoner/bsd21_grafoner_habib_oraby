@@ -64,11 +64,42 @@ public class TestDoubleQueue {
 
     /**
      * Test if exception will be thrown
+     * Removing element (a double value) from an queue with 0.0 as element
+     */
+    @Test
+    void testRemoveEmpty() {
+        doubleq.offer(0.0);
+        Assertions.assertThrows(NoSuchElementException.class, () -> { doubleq.remove();});
+    }
+
+    /**
+     * Test if exception will be thrown
      * Getting element (a double value) from an empty queue
      */
     @Test
     void testElement() {
         Assertions.assertThrows(NoSuchElementException.class, () -> { doubleq.element();});
+    }
+
+    /**
+     * Test if the only element will be returned
+     * Getting element (a double value) from a queue
+     */
+    @Test
+    void testElementFound(){
+        doubleq.offer(1.0);
+        Assertions.assertEquals(1.0, doubleq.element());
+    }
+
+    /**
+     * Test if the top element will be returned
+     */
+    @Test
+    void testElements(){
+        doubleq.offer(1.0);
+        doubleq.offer(2.0);
+        doubleq.offer(63.0);
+        Assertions.assertEquals(1.0, doubleq.element());
     }
 
 }

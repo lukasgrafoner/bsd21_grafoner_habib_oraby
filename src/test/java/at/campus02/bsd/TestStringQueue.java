@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.NoSuchElementException;
 
+
+
 public class TestStringQueue {
     private StringQueue stringq;
 
@@ -64,11 +66,47 @@ public class TestStringQueue {
 
     /**
      * Test if exception will be thrown
+     * Removing element from an empty queue
+     */
+
+    @Test
+    public void testRemove2(){
+        Assertions.assertThrows(NoSuchElementException.class, () -> stringq.remove());
+    }
+
+
+    /**
+     * Test if exception will be thrown
      * Getting element from an empty queue
      */
     @Test
     void testElement() {
         Assertions.assertThrows(NoSuchElementException.class, () -> { stringq.element();});
+    }
+
+    /**
+     * Test if testString will be given back
+     */
+
+    @Test
+    void testElementFound(){
+        String testString = "test";
+        stringq.offer(testString);
+        Assertions.assertEquals(testString,stringq.element());
+    }
+
+    /**
+     * Test if "eins" will be given back
+     */
+
+    @Test
+    void testElements(){
+        stringq.offer("eins");
+        stringq.offer("zwei");
+        stringq.offer("drei");
+        stringq.offer("vier");
+        stringq.offer("fünf");
+        Assertions.assertEquals("eins",stringq.element());
     }
 
 }

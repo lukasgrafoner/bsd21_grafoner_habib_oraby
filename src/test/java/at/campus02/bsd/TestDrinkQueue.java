@@ -78,13 +78,33 @@ public class TestDrinkQueue {
         Assertions.assertEquals(simpleDrink, drinkq.remove());
     }
 
+
+    /**
+     * Test if exception will be thrown
+     * Removing from empty queue
+     */
+    @Test
+    void testRemoveException() {
+        Assertions.assertThrows(NoSuchElementException.class, () -> {drinkq.remove();});
+    }
+
     /**
      * Test if exception will be thrown
      * Getting element from an empty queue
      */
     @Test
-    void testElement() {
+    void testElementException() {
         Assertions.assertThrows(NoSuchElementException.class, () -> { drinkq.element();});
+    }
+
+    /**
+     * Fill the queue with an element
+     * Test if element gets returned
+     */
+    @Test
+    void testElement() {
+        drinkq.offer(simpleDrink);
+        Assertions.assertEquals(simpleDrink, drinkq.element());
     }
 
 }
